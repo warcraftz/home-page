@@ -2,6 +2,10 @@
     --ff-def: ;
     --ff-alt: ;
 
+    --fz-small: 11px;
+    --fz-normal: 14px;
+    --fz-bigger: 22px;
+
     --back-color-def: ;
     --back-color-alt: ;
 
@@ -47,9 +51,21 @@ header .content {
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 0 20px 0 20px;
     justify-content: space-between;
 }
 header .content .l-side {display: flex;}
-header .content .l-side .brand {
-    margin-right: 5rem
+header .content .r-side {display: flex; align-items: center; justify-content: center;}
+header .content .l-side .brand {margin-right: 5rem}
+header .content .r-side .theme {margin-right: 10px;}
+header .content .r-side .theme,
+header .content .r-side .menu {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    cursor: pointer;
 }
