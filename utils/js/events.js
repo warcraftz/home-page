@@ -21,6 +21,7 @@ function func_theme_change(){
     
     var i;
     if(classEl == 'fa fa-moon'){
+        alert('A opção selecionada encontra-se em desenvolvimento! Por favor mantenha-se em light tema')
         $(iconeEl).attr("class", "fa fa-sun");
         
         // APPLY CHANGES IN THE CASE
@@ -51,24 +52,5 @@ function func_theme_change(){
             animatedLettersEl[i].style.background = 'var(--back-light-blur)';
             animatedLettersEl[i].style.border = '1px solid var(--text-light-def)';
         }
-    }
-}
-
-function func_rooter_page(e){
-    var aboutPage = document.querySelector('.about');
-    var workPage = document.querySelector('.work');
-
-    switch(e){
-        case 1:
-            console.log("caso -1");
-            workPage.style.display = "none";
-            aboutPage.style.display = "block";
-            break;
-        case 2:
-            console.log("caso -2");
-            aboutPage.style.display = "none";
-            workPage.style.display = "block";
-            break;
-        default:
     }
 }
