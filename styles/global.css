@@ -100,7 +100,6 @@ footer {
 }
 
 /* DEFAULTS [ IDs | LINKs ] */
-#button {}
 
 .link { cursor: pointer; }
 .link:hover { cursor: pointer; text-decoration: underline; }
