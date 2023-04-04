@@ -1,86 +1,162 @@
-@font-face{
-    font-family: 'Agave NF';
+@font-face {
+    font-family: "Agave NF";
     font-weight: normal;
     font-style: normal;
-    src: url(../assets/fonts/agave/Agave.otf)
+    src: url('../assets/fonts/agave/Agave.otf')
 }
-@font-face{
-    font-family: 'Hermit NF';
+@font-face {
+    font-family: "Hermit NF";
     font-weight: normal;
     font-style: normal;
-    src: url(../assets/fonts/hermit/Hurmit.otf)
+    src: url('../assets/fonts/hermit/Hurmit.otf');
 }
-:root{
-    --ff-agave: 'Agave NF';
-    --ff-hermit: 'Hermit NF';
 
-    --fz-small: 10px;
-    --fz-normal: 14px;
-    --fz-bigger: 22px;
+:root {
+    /*  */
+    --fz-smaller: 10px;
+    --fz-normal: 12px;
+    --fz-larger: 22px;
+    /* Dark Theme */
+    --back-dark-theme-blur: rgba(32, 32, 35, .5);
+    --back-dark-theme-def: #202023;
+    --back-dark-theme-alt: #313134;
 
-    /* LIGHT THEME */
-    --back-light-blur: rgba(221, 221, 221, .5);
-    --back-light-def: #e6eaed;
-    --back-light-alt: #dddddd;
-    --back-light-icon-def: #955cff;
-    --back-light-icon-alt: #7045bf;
-    --light-color-icon: #ffffff;
+    --back-dark-button-def: #ffd18c;
+    --back-dark-button-alt: #db8438;
+    --back-dark-button-aux: #323235;
 
-    --text-light-def: #000000;
-    --text-light-alt: #bac0cc;
-    --text-light-aux: #f6f5f8;
+    --color-dark-button-def: #202023;
+    --color-dark-button-alt: #202023;
+    --color-dark-button-aux: #c1c1c1;
 
-    /* DARK THEME */
-    --back-dark-blur: rgba(0, 0, 0, .5);
-    --back-dark-def: #000000;
-    --back-dark-alt: #2f2b53;
-    --back-dark-icon-def: #cc873f;
-    --back-dark-icon-alt: #ffa94f;
-    --dark-color-icon: #000000;
+    --text-dark-color-def: #ffffff;
 
-    --text-dark-def: #ffffff;
-    --text-dark-alt: #45436c;
-    --text-dark-aux: #635f83;
+
+    /* Light Theme */
+    --back-light-theme-blur: rgba(247, 240, 232. .1);
+    --back-light-theme-def: #f3e7db;
+    --back-light-theme-alt: #f7f0e8;
+
+    --back-light-button-def: #8659d3;
+    --back-light-button-alt: #7045bf;
+    --back-light-button-aux: #ecf2f7;
+
+    --color-light-button-def: #ffffff;
+    --color-light-button-alt: #4c545e;
+    --color-light-button-aux: #c1c1c1;
+
+    --text-light-color-def: #000000;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-size: var(--fz-normal);
-    font-family: var(--ff-hermit);
-}
-body{
-    width: 100%;
-    overflow-x: hidden;
-    background: var(--back-light-def);
-}
-header{
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    background: var(--back-light-blur);
-    backdrop-filter: blur(15px);
-    z-index: 999;
-}
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.app{
-    position: relative;
-    max-width: 890px;
-    width: 100%;
-    margin-top: 120px;
-}
-footer{
-    width: 100%;
-    height: 300px;
 }
 
-/* id / class - especiais */
-#link-about {display: none;}
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+/*  */
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8d57d1; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8d57d1; 
+  }
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 0 auto;
+    bottom: 0;
+}
+
+/* DEFAULTS [ IDs | LINKs ] */
+#button {}
+
+.link { cursor: pointer; }
+.link:hover { cursor: pointer; text-decoration: underline; }
+
+.hea {width: 100%; height: 100%; display: flex; align-items: center; justify-content: space-between; backdrop-filter: blur(5px);}
+.hea .brand label { margin-left: 10px;}
+.hea .brand label:nth-child(1){font-size: var(--fz-large);}
+.hea .r-side {display: flex;}
+
+#s-about {
+    margin-bottom: 60px;
+}
+#s-about .section {
+    text-transform: uppercase;
+    text-decoration: overline;
+    letter-spacing: 1.5px;
+}
+#s-about .s-link li {
+    line-height: 30px;
+}
+#s-about .s-link li i {
+    margin-right: 10px;
+}
+#s-about .s-link li span {
+    line-height: 30px;
+    font-family: var(--ff-hermit);
+}
+
+
+
+
+.foo { width: 100%; text-align: center; position: absolute; bottom: 25px;}
+
+
+
+/* Animations */
+@keyframes animeTheme-1 {
+    to{
+        transform: translateY(20px);
+        opacity: 0;
+    }from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes animeTheme-2 {
+    to{
+        transform: translateY(20px);
+        opacity: 0;
+    }from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.app {
+    padding-top: 80px;
+}

@@ -1,0 +1,16 @@
+@media screen and (min-width: 766px) {
+    /* format mobile divice */
+
+
+
+    /* IDs [ remove | enable | disable | ] */
+    #remove, #disable { display: block; }
+    #enable { display: block; }
+    #active { text-decoration: underline; }
+
+    /* BUTTONS */
+    #button {
+        width: 40px; height: 40px;
+        display: flex; align-items: center; justify-content: center;
+    }
+}

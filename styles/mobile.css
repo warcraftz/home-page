@@ -1,0 +1,107 @@
+@media screen and (max-width: 692px) {
+    /* format mobile divice */
+
+
+
+    /* IDs [ remove | enable | disable | ] */
+    #remove, #disable { display: none; }
+    #enable { display: block; }
+    #active { text-decoration: underline; }
+
+    /* BUTTONS */
+    #button {
+        width: 35px; height: 35px;
+        display: flex; align-items: center; justify-content: center;
+    }
+
+    /* ----------------------------------------- */
+    .nav {
+        position: absolute;
+        right: 0;
+        top: 65px;
+        right: 10px;
+        width: 160px;
+        display: flex;
+        line-height: 2.5;
+        padding: 10px 12px;
+        flex-direction: column;
+        border-radius: 12px;
+    }
+    .hidde {
+        display: none;
+    }
+
+    /* root - [about] */
+    #root {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #root #about {
+        width: 100%;
+    }
+    #about .greet {padding: 20px;font-size: var(--fz-larger); text-align: center;letter-spacing: 2px;font-family: var(--ff-hermit);}
+    #about .less {display: flex;justify-content: space-between; margin-top: 60px;}
+    #about .me{position: relative;width: 100px;height: 100px;}
+    #about .circles {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #about .circles img  {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+    #about .circles .blur {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+    }
+    #about .circles .blur::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../assets/imgs/me.jpg);
+        background-size: 100% 100%;
+    }
+    #about .circle-1, #about .circle-2 {z-index: 998;}
+    #about .circle-1 {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 5px solid var(--back-dark-blur); /* change js theme */
+    }
+    #about .circle-2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        border: 2.5px solid var(--back-dark-blur); /* change js theme */
+    }
+    #about .moreme {
+        position: relative;
+        width: 100%;
+        display: flex;
+        margin-top: 50px;
+        text-align: justify;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

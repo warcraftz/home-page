@@ -5,59 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- load css files -->
+
+    <!-- CSS Files -->
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/stylos.css">
-    <link rel="stylesheet" href="./styles/media.query.css">
-
-    <!-- animation -->
-    <link rel="stylesheet" href="./styles//animated.css">
-
-    <!-- pages css settings -->
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/works.css">
+    <link rel="stylesheet" href="./styles/animated.css">
+    
+    <!-- ICONs CSS -->
     <link rel="stylesheet" href="./assets/icons/css/all.css">
 
-    <!-- load js files -->
+    <!-- PAGEs Csss -->
+    <link rel="stylesheet" href="./styles/works.css">
+
+    <!-- MOBILE | DESKTOP CSSs -->
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/desktop.css">
+
+    <!-- Javascript Files -->
     <script src="./utils/jquery/jquery.min.js"></script>
-    <script src="./utils/js/menuEvents.js"></script>
-    <script src="./utils/js/events.js"></script>
+
+    <!-- Events Js -->
+    <script src="./utils/jquery/applysettings.js"></script>
+    <script src="./utils/js/root.js"></script>
+    <script src="./utils/js/menu.js"></script>
+    <script src="./utils/js/actived.js"></script>
     <script src="./utils/js/works.js"></script>
+    <script src="./utils/js/footer.js"></script>
 
     <title>Mereles Fernando</title>
 </head>
 <body>
     <div class="container">
-        <!-- HEADER -->
-        <header class="hea">
-            <div class="content">
+        <!-- Header -->
+        <header>
+            <div class="hea">
+                <!-- Left Side -->
                 <div class="l-side">
                     <div class="brand">
-                        <span class="logo">MF</span>
-                        <span href="#app" class="link" onclick="func_rooter_page(1)">Mereles Fernando</span>
+                        <label for="app" onclick="func_rooter_page(1)">MF</label>
+                        <label for="app" onclick="func_rooter_page(1)" id="remove">Mereles Fernando</label>
                     </div>
-
-                    <div class="links">
-                        <span href="#app" class="link" onclick="func_rooter_page(1)" id="link-about">Sobre</span>
-                        <span href="#app" class="link" onclick="func_rooter_page(2)">Trabalhos</span>
-                        <span href="#app" class="link">feedback</span>
-                        <a href="https://github.com/warcraftz/home-page" class="link" target="_blank"><i class="fab fa-github"></i> Source</a>
-                    </div>
+                    <nav class="nav hidde" id="linksBox">
+                        <label class="link" for="app" onclick="func_rooter_page(1)" onclick="activeds(1)">Sobre</label>
+                        <label class="link" for="app" onclick="func_rooter_page(2)" onclick="activeds(2)">Trabalhos</label>
+                        <label class="link" for="feed" onclick="activeds(3)">Feedback</label>
+                        <a class="link" onclick="activeds(4)" href="https://github.com/warcraftz/home-page" target="_blank"><i class="fab fa-github"></i> Source</a>
+                    </nav>
                 </div>
+                <!-- Right Side -->
                 <div class="r-side">
-                    <div class="theme" onclick="func_theme_change(1)">
-                        <i id="icon" class="fa fa-moon"></i>
+                    <div id="button" class="theme" onclick="switch_buttom(1)">
+                        <i class="fa fa-moon"></i>
                     </div>
-                    <div class="menu">
-                        <i id="icon" class="fa fa-bars" onclick="func_menu_toggle()"></i>
+                    <div id="button" class="menu" onclick="switch_buttom(2)">
+                        <i class="fa fa-bars"></i>
                     </div>
                 </div>
+
             </div>
         </header>
-        <!-- HEADER ENDED -->
-        
-        <!-- APP -->
-        <div class="app" id="app">
+
+        <div class="app" id="'app">
             <!-- ANIMATED -->
             <div class="animated">
                 <div class="platform">
@@ -80,19 +87,19 @@
             </div>
             <!-- ANIMETED END -->
 
-            <!-- PAGES -->
-            <div class="pages">
-                <!-- ABOUT -->
-                <section class="page about" id="about">
-                    <div class="content">
+            <!-- root -->
+                <div class="roo" id="root" >
+                    <div class="about" id="about">
                         <h1 class="greet">Ola, Eu sou um desenvolvedor de aplicativos baseado em Angola!</h1>
+
                         <div class="less">
                             <div class="lessme">
                                 <h1 class="name">Mereles Fernando</h1>
                                 <p>Draftsman ( Desenvolvidor / Designer / Estudante )</p>
                             </div>
+
                             <div class="me">
-                                <div class="content">
+                                <div class="circles">
                                     <img src="./assets/imgs/me.jpg" alt="">
                                     <span class="blur"></span>
                                     <div class="circle-1">
@@ -101,82 +108,44 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>  
+                        
+                        <div class="moreme" id="s-about">
+                            <div class="text">
+                                <span class="section">Sobre</span>
+                                <p>
+                                    Mereles Fernando, estudante do <a href="" class="ex-link"><span>ISPTEC</span></a>(Instituto Superior Politecnico de Tecnologias e ciências) cursando na area de Engenharia Informática. Trabalha como freelance.
+                                    Gosta de criar programa que ajudam a resolver problemas do dia dia, construir layouts com photoshop e emplementar com codigo.    
+                                    <label for="work" class="port">Portifólio</label>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="on" id="s-about">
+                            <span class="section">Seguir Me</span>
+                            <div class="s-link">
+                                <li><a href="#" target="_blank"> <i class="fab fa-github"></i><span>@warcraftz</span> </a></li>
+                                <li><a href="#" target="_blank"> <i class="fab fa-pinterest"></i><span>@warcraftz</span> </a></li>
+                                <li><a href="#" target="_blank"> <i class="fab fa-facebook"></i><span>@warcraftz</span> </a></li>
+                                <li><a href="#" target="_blank"> <i class="fab fa-twitter"></i><span>@warcraftz</span> </a></li>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="moreme">
-                        <div class="content">
-                            <div class="f-card">
-                                <div class="v-card">
-                                    <section class="main">
-                                        <p>Freelance (Front-End UX/UI)</p>
-                                    </section>
-        
-                                    <section class="more">
-                                        <p>saiba mais sobre me...</p>
-                                        <div class="s-links">
-                                            <a href="">
-                                                <i class="fab fa-facebook"></i>
-                                            </a>
-                                            <a href="https://github.com/warcraftz" target="_blank" class="github">
-                                                <i class="fab fa-github"></i>
-                                            </a>
-                                            <a href="" class="teitter">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </section>
-        
-                                    <section class="info">
-                                        <div>
-                                            <span>Projectos</span>
-                                            <span class="value"></span>
-                                        </div>
-                                        <div>
-                                            <span></span>
-                                            <span class="value"></span>
-                                        </div>
-                                        <div>
-                                            <span></span>
-                                            <span class="value"></span>
-                                        </div>
-        
-                                        <button class="btn-opened" onclick="func_opened()">
-                                            <i class="fas fa-angle-up" id="plus"></i>
-                                            <i class="fas fa-angle-down" id="minus"></i>
-                                        </button>
-                                    </section>
-                                </div>
-        
-                                <div class="text">
-                                    <p class="paragraph">
-                                        Mereles Fernando, estudante do <a href="" class="ex-link"><span>ISPTEC</span></a>(Instituto Superior Politecnico de Tecnologias e ciências) cursando na area de Engenharia Informática. Trabalha como freelance.
-                                        Gosta de criar programa que ajudam a resolver problemas do dia dia, construir layouts com photoshop e emplementar com codigo.    
-                                    </p>
-                                </div>
-                            </div>
-                        </div> 
+                    <div class="works" id="removes">
+                        <h1>TRABALHOS</h1>
+                        <div class="container">
+                            <div class="work-card"></div>
+                        </div>
                     </div>
-                </section>
+                </div>
 
-                <!-- WORK -->
-                <section class="page work" id="work">
-                    <h1>TRABALHOS</h1>
-                    <div class="container">
-                        <div class="work-card"></div>
-                    </div>
-                </section>
-
-                <!-- FEEDBACK -->
-                <section class="page"></section>
-            </div>
-            <!-- PAGES ENDED -->
-            <!-- FOOTER -->
-            <footer class="foo">
-            </footer>
-            <!-- FOOTER ENDED -->
+                <!-- footer -->
+                <footer>
+                    <p class="foo"> ©  <span class="year"></span> Mereles Fernando. Todos direitos reservados.</p>
+                </footer>
+            <!-- root -->
         </div>
-        <!-- APP ENDED-->
     </div>
 </body>
 </html>
