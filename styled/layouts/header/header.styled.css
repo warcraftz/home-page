@@ -1,0 +1,50 @@
+header.fixed {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    height: 60px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    z-index: 998;
+}
+header.fixed .hea-content { 
+    min-width: 320px; 
+    max-width: 700px; 
+    width: 100%; 
+    padding: 0px 10px 0px 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+.hea-content .rside span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+.hea-content  .rside .toggleBtn {
+}
+
+@media screen and (max-width: 692px){}
+@media screen and (min-width: 766px){
+    .hea-content .lside .menu a {
+        margin: 5px;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    .hea-content .lside .menu a:nth-child(1):hover {
+        text-decoration: underline;
+    }
+    .hea-content .lside .menu a:nth-child(2):hover {
+        text-decoration: underline;
+    }
+    .hea-content .lside .menu a.active
+    {
+        background: #000;
+        padding: 10px;
+    }
+}

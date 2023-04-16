@@ -1,1 +1,0 @@
-// LISTA DE EXERCICIOS Nº 1 [10]

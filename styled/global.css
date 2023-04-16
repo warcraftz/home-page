@@ -1,0 +1,136 @@
+/* create font family */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/poppins/poppins.ttf');
+}
+@font-face {
+    font-family: 'Hurmit NF';
+    src: url('../assets/fonts/hermit/hurmit.otf');
+}
+
+:root {
+    --ff-def: 'Poppins'; --ff-aux: 'Hurmit NF';
+    --fz-small: 11px; --fz-normal: 14px; --fz-large: 22px;
+    
+    /* Theme [ dark / light ] */
+    /* Dark Theme */
+    --dark-blur: rgba(32, 32, 35, .5);
+
+    --dark-back-def: #202023;
+    --dark-back-alt: #313134;
+
+    --dark-text-color-def: #FFFFFF;
+    --dark-text-color-alt: #FFD18C;
+
+    --dark-button-color-def: #202023;
+    --dark-button-color-alt: #202023;
+    --dark-button-color-aux: #C1C1C1;
+
+    --dark-button-back-def: #FFD18C;
+    --dark-button-back-alt: #DB8438;
+    --dark-button-back-aux: #323235;
+
+    --dark-icon-moon: 'none';
+    --dark-icon-sun: 'block';
+
+    --dark-animation: 'animeTheme-1 .3s'
+    
+    /* Light Theme */
+    --light-blur: rgba(255, 255, 255, .1);
+
+    --light-back-def: #F3E7DB;
+    --light-back-alt: #F7F0E8;
+    
+    --light-text-color-def: #000000;
+    --light-text-color-alt: #111111;
+    
+    --light-button-color-def: #FFFFFF;
+    --light-button-color-alt: #4C545E;
+    --light-button-color-aux: #C1C1C1;
+    
+    --light-button-back-def: #8659D3;
+    --light-button-back-alt: #7045BF;
+    --light-button-back-aux: #ECF2F7;
+
+    --light-icon-moon: 'block';
+    --light-icon-sun: 'none';
+
+    --light-animation: 'animeTheme-1 .3s'
+}
+
+/* Default Page Property */
+* {margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none;} 
+body {overflow-x: none; max-width: 100%; min-height: 100vh;}
+
+
+
+.lside, .rside { display: flex; line-height: 60px; }
+
+.app {width: 100%; display: flex; justify-content: center; }
+section.body { 
+    min-width: 320; 
+    max-width: 600px; 
+    padding: 0 20px 0 20px; 
+    width: 100%; 
+    min-height: 100vh; 
+}
+
+/* variable css [ link / title / paragraph ] */
+.ex-link {text-decoration: underline;}
+.tumblr { 
+    position: absolute; 
+    width: 100%; height: 100%; 
+    object-fit: cover; 
+    border-radius: 12px; 
+    z-index: -1;
+}
+.button { 
+    width: 40px; 
+    height: 40px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 1px solid #111; 
+    border-radius: 12px; 
+    cursor: pointer;
+}
+.button i {font-size: var(--fz-large);}
+.title {font-size: var(--fz-large); font-weight: bold; text-align: center;}
+.defaultLink { margin-right: 25px; display: flex;}
+.defaultLink span:nth-child(1) {margin-right: 10px;}
+
+/* Animations Theme Button */
+@keyframes animeTheme-1 {
+    to{
+        transform: translateY(20px);
+        opacity: 0;
+    }from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes animeTheme-2 {
+    to{
+        transform: translateY(20px);
+        opacity: 0;
+    }from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 692px) {
+    .defaultLink { font-size: var(--fz-small); font-weight: bold; }
+    .link { font-size: var(--fz-small); text-decoration: underline;}
+    .remove { display: block; }
+    .paragraph { font-size: var(--fz-small); text-align: justify; }
+}
+
+/* desktop */
+@media screen and (min-width: 766px) {
+    .defaultLink { font-size: var(--fz-normal); font-weight: bold; }
+    .remove { display: none; }
+    .link { font-size: var(--fz-normal); text-decoration: underline;}
+    .paragraph { font-size: var(--fz-normal); text-align: justify; }
+}
