@@ -59,7 +59,7 @@
 }
 
 /* Default Page Property */
-* {margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none;} 
+* {margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none; font-family: var(--ff-def);} 
 body {overflow-x: none; max-width: 100%; min-height: 100vh;}
 
 
@@ -102,20 +102,24 @@ section.body {
 /* Animations Theme Button */
 @keyframes animeTheme-1 {
     to{
-        transform: translateY(20px);
+        display: none;
         opacity: 0;
+        transform: translateY(20px);
     }from{
         transform: translateY(0px);
         opacity: 1;
+        display: block;
     }
 }
 @keyframes animeTheme-2 {
     to{
-        transform: translateY(20px);
+        display: none;
         opacity: 0;
+        transform: translateY(20px);
     }from{
         transform: translateY(0px);
         opacity: 1;
+        display: block;
     }
 }
 

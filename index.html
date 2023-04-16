@@ -15,6 +15,7 @@
     
     <!-- Js File Import -->
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/rooter.components.js"></script>
     <script src="./js/components/about.components.js"></script>
     <script src="./js/components/work.components.js"></script>
     
@@ -25,10 +26,15 @@
         <header class="fixed">
             <div class="hea-content">
                 <div class="lside">
-                    <div class="brand"><a href="index.html" class="defaultLink"><span class="brand">MF</span><div class="me">Mereles Fernando</div></a></div>
+                    <div class="brand">
+                        <a href="#app" class="defaultLink" onclick="func_rooter_page(1)">
+                            <span class="brand">MF</span>
+                            <div class="me">Mereles Fernando</div>
+                        </a>
+                    </div>
                     <div class="menu">
-                        <a href="#app" class="disable link">sobre</a>
-                        <a href="#app" class="link">projectos</a>
+                        <a href="#app" onclick="func_rooter_page(1)" class="link">sobre</a>
+                        <a href="#app" onclick="func_rooter_page(2)" class="link">projectos</a>
                         <a href="#feedback" class="link">feedback</a>
                         <a href="" class="link"><i class="fab fa-github">source</i></a>
                     </div>
