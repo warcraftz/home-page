@@ -1,7 +1,7 @@
 $(document).ready(function (){
 
     var about = `
-        <h1 class="greet">Ola, Eu sou um desenvolvedor de aplicativos baseado em Angola.</h1>
+        <h1 class="greet">Ola! Eu sou um desenvolvedor de aplicativos baseado em Angola.</h1>
         
         <div class="less">
             <div class="lessme">
