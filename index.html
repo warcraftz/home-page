@@ -12,16 +12,21 @@
     <link rel="stylesheet" href="./assets/icons/css/all.css">
     <link rel="stylesheet" href="./styled/pages/about/about.styled.css">
     <link rel="stylesheet" href="./styled/pages/works/works.styled.css">
+    <link rel="stylesheet" href="./styled/layouts/footer/footer.styled.css">
     
     <!-- Js File Import -->
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/components/animated.components.js"></script>
+    <script src="./js/toogle.menu.js"></script>
     <script src="./js/rooter.components.js"></script>
     <script src="./js/components/about.components.js"></script>
     <script src="./js/components/work.components.js"></script>
+    <script src="./js/components/footer.components.js"></script>
+    
     
     <title>Mereles Fernando</title>
 </head>
-<body>
+<body class="body">
     <div class="container">
         <header class="fixed">
             <div class="hea-content">
@@ -33,15 +38,14 @@
                         </a>
                     </div>
                     <div class="menu">
-                        <a href="#app" onclick="func_rooter_page(1)" class="link">sobre</a>
-                        <a href="#app" onclick="func_rooter_page(2)" class="link">projectos</a>
-                        <a href="#feedback" class="link">feedback</a>
-                        <a href="" class="link"><i class="fab fa-github">source</i></a>
+                        <a href="#app" onclick="func_rooter_page(1)" class="link">Sobre</a>
+                        <a href="#app" onclick="func_rooter_page(2)" class="link">Projectos</a>
+                        <a href="#feed" class="link">Feedback</a>
+                        <a href="https://github.com/warcraftz" target="_blank" class="link"><i class="fab fa-github"> Source</i></a>
                     </div>
                 </div>
                 <div class="rside">
-                    <span class="themeBtn"><i class="fa fa-sun"></i></span>
-                    <span class="toggleBtn"><i class="fa fa-bars"></i></span>
+                    <span class="toggleBtn" onclick="switchToggleIcon()"><i class="fa fa-bars"></i></span>
                 </div>
             </div>
         </header>
@@ -51,22 +55,7 @@
                 <!-- Animated Section -->
                 <section class="animated">
                     <div class="container">
-                        <div class="platform">
-                            <div class="cubes" id='cubes'>
-                                <div class="face_01_ft">H</div>
-                                <div class="face_02_bc">I</div>
-                                <div class="face_03_rg">!</div>
-                                <div class="face_04_lf">W</div>
-                                <div class="face_05_tp">A</div>
-                                <div class="face_06_bo">R</div>
-                                <div class="face_07_ft">C</div>
-                                <div class="face_08_bc">R</div>
-                                <div class="face_09_rg">A</div>
-                                <div class="face_10_lf">F</div>
-                                <div class="face_11_tp">T</div>
-                                <div class="face_12_bo">Z</div>
-                            </div>
-                        </div>
+                        <!-- EnnerHtml by js -->
                     </div>
                 </section>
 
@@ -85,7 +74,8 @@
                         <!-- EnnerHtml width js -->
                         </div>
                     </section>
-                    <footer class="foo" id="foo"></footer>
+                    <!-- footer -->
+                    <footer><!-- EnnerHtml width js --></footer>
                 </section>
             </section>
         </div>

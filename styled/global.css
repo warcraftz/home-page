@@ -20,7 +20,7 @@
     --dark-back-alt: #313134;
 
     --dark-text-color-def: #FFFFFF;
-    --dark-text-color-alt: #FFD18C;
+    --dark-text-color-alt: #C1C1C1;
 
     --dark-button-color-def: #202023;
     --dark-button-color-alt: #202023;
@@ -28,45 +28,35 @@
 
     --dark-button-back-def: #FFD18C;
     --dark-button-back-alt: #DB8438;
-    --dark-button-back-aux: #323235;
 
     --dark-icon-moon: 'none';
     --dark-icon-sun: 'block';
 
-    --dark-animation: 'animeTheme-1 .3s'
-    
-    /* Light Theme */
-    --light-blur: rgba(255, 255, 255, .1);
-
-    --light-back-def: #F3E7DB;
-    --light-back-alt: #F7F0E8;
-    
-    --light-text-color-def: #000000;
-    --light-text-color-alt: #111111;
-    
-    --light-button-color-def: #FFFFFF;
-    --light-button-color-alt: #4C545E;
-    --light-button-color-aux: #C1C1C1;
-    
-    --light-button-back-def: #8659D3;
-    --light-button-back-alt: #7045BF;
-    --light-button-back-aux: #ECF2F7;
-
-    --light-icon-moon: 'block';
-    --light-icon-sun: 'none';
-
-    --light-animation: 'animeTheme-1 .3s'
+    --dark-animation: 'animeTheme-1 .5s';
 }
 
 /* Default Page Property */
-* {margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none; font-family: var(--ff-def);} 
-body {overflow-x: none; max-width: 100%; min-height: 100vh;}
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+    list-style: none; 
+    font-family: var(--ff-def);
+} 
+body {
+    overflow-x: none; 
+    max-width: 100%; 
+    min-height: 100vh; 
+    background: var(--dark-back-def);
+    color: var(--dark-text-color-def);
+}
 
 
 
 .lside, .rside { display: flex; line-height: 60px; }
-
 .app {width: 100%; display: flex; justify-content: center; }
+
 section.body { 
     min-width: 320; 
     max-width: 600px; 
@@ -94,8 +84,10 @@ section.body {
     border-radius: 12px; 
     cursor: pointer;
 }
+a{ color: var(--dark-text-color-def)}
 .button i {font-size: var(--fz-large);}
 .title {font-size: var(--fz-large); font-weight: bold; text-align: center;}
+.paragraph {color: var(--dark-text-color-alt)}
 .defaultLink { margin-right: 25px; display: flex;}
 .defaultLink span:nth-child(1) {margin-right: 10px;}
 

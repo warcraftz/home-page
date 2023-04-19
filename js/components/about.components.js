@@ -6,7 +6,7 @@ $(document).ready(function (){
         <div class="less">
             <div class="lessme">
                 <h1 class="name">Mereles Fernando</h1>
-                <p>Draftsman ( Desenvolvidor / Designer / Estudante )</p>
+                <p class="paragraph">Draftsman ( Desenvolvidor / Designer / Estudante )</p>
             </div>
 
             <div class="pickme">
@@ -40,10 +40,24 @@ $(document).ready(function (){
         <div class="onweb">
             <span class="item">Segui Me</span>
             <div class="socials">
-                <li><a href="https://github.com/warcraftz" target="_blank"> <i class="fab fa-github"></i><span>@warcraftz</span> </a></li>
-                <li><a href="#" target="_blank"> <i class="fab fa-pinterest"></i><span>@warcraftz</span> </a></li>
-                <li><a href="#" target="_blank"> <i class="fab fa-facebook"></i><span>@warcraftz</span> </a></li>
-                <li><a href="#" target="_blank"> <i class="fab fa-twitter"></i><span>@warcraftz</span> </a></li>
+                <li><a href="https://github.com/warcraftz" target="_blank"> 
+                    <span><i class="fab fa-github"></i></span>
+                    <span>github / @warcraftz</span> 
+                </a></li>
+                
+                <li><a href="#" target="_blank"> 
+                    <span><i class="fab fa-pinterest"></i></span>
+                    <span>pinterest / @warcraftz</span> 
+                </a></li>
+
+                <li><a href="#" target="_blank"> 
+                    <span><i class="fab fa-facebook"></i></span>
+                    <span>facebook / @warcraftz</span> 
+                </a></li>
+                <li><a href="#" target="_blank"> 
+                    <span><i class="fab fa-twitter"></i></span>
+                    <span>twitter / @warcraftz</span> 
+                </a></li>
             </div>
         </div>
     `

@@ -14,8 +14,9 @@ section.about .container {
 section.about .greet {
     padding: 20px;
     text-align: center;
-    background: #11111150;
     border-radius: 12px;
+    font-weight: normal;
+    background: #FFFFFF50;
 }
 section.about .less { display: flex; justify-content: space-between; margin-top: 2.5em;}
 section.about .less .lessme h1{font-size: var(--fz-large); letter-spacing: 3.5px; font-weight: bold;}
@@ -24,12 +25,12 @@ section.about .less .lessme p{font-size: var(--fz-small);}
 section.about .less .pickme {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
     min-width: 100px;
     max-width: 100px;
     min-height: 100px;
     max-height: 100px;
+    align-items: center;
+    justify-content: center;
     border-radius: 12px;
     background: url('../../../assets/imgs/me.jpg') no-repeat;
     background-size: 100% 100%;
@@ -75,8 +76,18 @@ section.about .socials {
 section.about .paragraph label { display: none;}
 section.about .socials li {
     display: flex;
-    line-height: 25px;
+    line-height: 40px;
 }
 section.about .socials li span {
-    margin-left: 10px;
+    margin-left: 5px;
+    font-size: var(--fz-small);
+    line-height: 40px;
+}
+section.about .socials li a{
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+}
+section.about .socials li span:nth-child(1){
+    font-size: var(--fz-large);
 }

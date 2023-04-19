@@ -7,13 +7,13 @@
 .animated .container {
     width: 100%;
     height: 100%;
-    perspective: 1000;
+    perspective: 1000px;
     perspective-origin: 50% 190px;
 }
 .platform {
     width: 100%;
     height: 100%;
-    perspective: 900;
+    perspective: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,16 +24,17 @@
     height: 100px;
     margin: 0 auto;
     transform-style: preserve-3d;
-    animation: animateCube 5s linear infinite;
+    animation: animateCube 15s linear infinite;
 }
 @keyframes animateCube {
     to{
-        transform: rotateY(0deg)  rotatez(5deg);
+        transform: rotateY(0deg);
     }
     from{
-        transform: rotateY(360deg) rotateZ(5deg);
+        transform: rotateY(360deg);
     }
 }
+.cubes .border {border-color: var(--dark-text-color-def);}
 .face_01_ft, .face_02_bc, .face_03_rg, .face_04_lf, .face_05_tp, .face_06_bo,
 .face_07_ft, .face_08_bc, .face_09_rg, .face_10_lf, .face_11_tp, .face_12_bo {
     position: absolute;
@@ -44,7 +45,7 @@
     align-items: center;
     box-sizing: border-box;
     justify-content: center;
-    border: 1px solid #000;
+    border: 1px solid;
 }
 .face_01_ft {
     transform: scale3d(0.5, 0.5, 0.5) rotateX(90deg) translateZ(50px);
