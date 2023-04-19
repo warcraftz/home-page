@@ -4,11 +4,11 @@ function switchToggleIcon(){
 
 
     if((toggleBtnIconEl.className) === 'fa fa-bars'){
-        $(toggleBtnIconEl).attr("class", "fab fa-close");
+        $(toggleBtnIconEl).attr("class", "fa fa-times");
         menuEl.style.display = 'flex';
     }
-    else if((toggleBtnIconEl.className) === 'fa fa-close'){
-        $(toggleBtnIconEl).attr("class", "fab fa-bars");
+    else if((toggleBtnIconEl.className) === 'fa fa-times'){
+        $(toggleBtnIconEl).attr("class", "fa fa-bars");
         menuEl.style.display = 'none';
     }
 }

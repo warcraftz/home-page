@@ -29,16 +29,16 @@ $(document).ready(function (){
     for(var i in worksData) {
         var card = `
             <div class="cards">
-                <div class="card">
-                    <a href="../../../assets/list/${worksData[i].id}" target="_blank">
+                <a href="../../../assets/list/${worksData[i].id}" target="_blank">
+                    <div class="card">
                         <img src="./assets/imgs/tumblr.jpg" alt="" class="tumblr">
                         <div class="view">
                             <span class="button">
                                 <i class="fab fa-java"></i>
                             </span>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
                 <div class="winfo">
                     <li><span class="title">${worksData[i].listName}</span></li>
                     <li>
