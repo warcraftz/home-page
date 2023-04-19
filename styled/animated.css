@@ -34,7 +34,12 @@
         transform: rotateY(360deg);
     }
 }
-.cubes .border {border-color: var(--dark-text-color-def);}
+.cubes .border {
+    border-color: var(--dark-text-color-def);
+    box-shadow: 0 0 50px 10px blue inset,
+                0 0 0 .2em #fff inset;
+}
+
 .face_01_ft, .face_02_bc, .face_03_rg, .face_04_lf, .face_05_tp, .face_06_bo,
 .face_07_ft, .face_08_bc, .face_09_rg, .face_10_lf, .face_11_tp, .face_12_bo {
     position: absolute;
@@ -83,4 +88,16 @@
 }
 .face_12_bo {
     transform: scale3d(1.0, 1.0, 1.0) rotateX(-90deg) translateZ(50px);
+}
+
+.base {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transform: translateZ(-120px) translateX(10px) rotateX(90deg) rotateZ(3deg);
+    bottom: 80px;
+    box-shadow: 0  120px 100px 10px blue,
+                50px 120px 100px 10px blue;
+    filter: blur(100px);
 }
