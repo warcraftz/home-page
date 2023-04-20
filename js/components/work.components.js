@@ -1,25 +1,25 @@
 $(document).ready(function (){
     var worksData = [
         {
-            'id': 'lista04',
+            'id': 'Lista04',
             'listName': 'P II - Lista de Exercicios 04',
             'exerNumb': 'Exercicios: 10',
             'exerSolv': 'Resolvidos: 09'
         },
         {
-            'id': 'lista03',
+            'id': 'Lista03',
             'listName': 'P II - Lista de Exercicios 03',
             'exerNumb': 'Exercicios: 10',
             'exerSolv': 'Resolvidos: 09'
         },
         {
-            'id': 'lista02',
+            'id': 'Lista02',
             'listName': 'P II - Lista de Exercicios 02',
             'exerNumb': 'Exercicios: 10',
             'exerSolv': 'Resolvidos: 09'
         },
         {
-            'id': 'lista01',
+            'id': 'Lista01',
             'listName': 'P II - Lista de Exercicios 01',
             'exerNumb': 'Exercicios: 10',
             'exerSolv': 'Resolvidos: 09'
