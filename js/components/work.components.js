@@ -29,7 +29,7 @@ $(document).ready(function (){
     for(var i in worksData) {
         var card = `
             <div class="cards">
-                <a href="../../../assets/list/${worksData[i].id}" target="_blank">
+                <a href="assets/list/${worksData[i].id}" target="_blank">
                     <div class="card">
                         <img src="./assets/imgs/tumblr.jpg" alt="" class="tumblr">
                         <div class="view">
