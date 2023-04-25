@@ -4,8 +4,75 @@ footer {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2em;
+    padding-top: 5em;
+    border-top: 1px solid var(--dark-button-color-aux);
 }
 
 footer .feed {
     margin-bottom: 5em;
 }
+footer .feed form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+footer form .row {
+    display: flex;
+}
+
+footer .inputBox{
+    position: relative;
+    margin: 10px;
+    width: 150px;
+}
+footer .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--dark-button-color-aux);
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: var(--dark-text-color-def);
+    font-size: var(--fz-small);
+}
+footer .inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: var(--fz-normal);
+    color: var(--dark-button-color-aux);
+    text-transform: uppercase;
+    transition: .5s;
+}
+footer .inputBox input:valid ~ label,
+footer .inputBox input:focus ~ label 
+{
+    color: #00dfc4;
+    padding: 0 10px;
+    font-size: var(--fz-small);
+    transform: translateX(10px) translateY(-7px);
+    background: var(--dark-back-def);
+    border-left: 1px solid var(--dark-button-color-aux);
+    border-right: 1px solid var(--dark-button-color-aux);
+    border-radius: 5px;
+    letter-spacing: 0.2em;
+}
+footer .btn {
+    position: relative;
+    width: 320px;
+    margin: 10px;
+}
+footer form button {
+    max-width: 320px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer form button:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+footer .right { margin-bottom: 1.5em;}

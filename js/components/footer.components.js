@@ -4,24 +4,28 @@ $(document).ready(function (){
     var currentYear = data.getFullYear();
 
     var foo = `
-    <div class="feed" id="feed">
-        <div class="content">
-            <div class="wrapper">
-                <span class="paragraph"><h3>Deixe seu feedback</h3></span>
-                <form action="https://formsubmit.co/f7d91712638afe7316d67683ec1c2b31" method="POST">
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="e-mail" required>
+    <div class="content">
+        <div class="feed" id="feed">
+            <form action="https://formsubmit.co/f7d91712638afe7316d67683ec1c2b31" method="POST">
+                <div class="row">
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
                     
-                    <label for="message"></label>
-                    <input type="text" name="message" id="message" placeholder="comenta aqui" required>
-                    <input type="hidden" name="_next" value="https://joyful-begonia-f703e2.netlify.app/page/thanks.html" >
-                    <button type="submit"><i class="fa fa-paper-plane"></i></button>
-                </form>
-            </div>
+                    <div class="inputBox">
+                        <input type="text" name="message" id="message" required>
+                        <label for="message">Texto</label>
+                    </div>
+                </div>
+
+                <input type="hidden" name="_next" value="https://joyful-begonia-f703e2.netlify.app/page/thanks.html" >
+                <div class="btn"><button type="submit">ENVIAR <i class="fa fa-paper-plane"></i></button></div>
+            </form>
         </div>
-    </div>
-    <div>
-        <p class="foo paragraph"> © ${currentYear} - Mereles Fernando. Todos direitos reservados.</p>
+        <div class="right">
+            <p class="foo paragraph"> © ${currentYear} - Mereles Fernando. Todos direitos reservados.</p>
+        </div>
     </div>
         
     `
