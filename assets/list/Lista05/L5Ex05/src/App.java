@@ -42,12 +42,19 @@ public class App {
                 case 2:
                     int half = matnxn.length / 2;
                     for(int i = 0; i < half; i++){
-                        matnxn[i][j]
+                        //matnxn[i][i] = 0;
                     }
                     break;
                 case 3:
-                    // comad here [half | meio]
-                    //int half = matnxn.length / 2;
+                    for(int  i = 0; i < n; i++){
+                        for(int j = 0; j < n; j++){
+                            if((i == j) || (i + j == n -1) || (i == n /2) || j == n / 2){
+                                matnxn[i][j] = "*";
+                            }else {
+                                matnxn[i][j] = ".";
+                            }
+                        }
+                    }
                     break;
                 default: System.out.println("Operação invalida");
             }

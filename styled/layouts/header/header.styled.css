@@ -6,7 +6,7 @@ header.fixed {
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    background: var(--dark-blur);
+    background: var(--blur-color);
     backdrop-filter: blur(15px);
     width: 100%; 
     z-index: 999;
@@ -21,7 +21,7 @@ header.fixed .hea-content {
     justify-content: space-between; 
 }
 .hea-content a {
-    color: var(--dark-text-color-def);
+    color: var(--txt-color-def);
 }
 .hea-content .rside span {
     width: 40px;

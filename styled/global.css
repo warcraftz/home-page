@@ -12,7 +12,18 @@
     --ff-def: 'Poppins'; --ff-aux: 'Hurmit NF';
     --fz-small: 11px; --fz-normal: 14px; --fz-large: 22px;
     
-    /* Theme [ dark / light ] */
+    /* Colors */
+    --blur-color: rgba(255, 255, 255, .1);
+    --back-color-def: #FFFFFF;
+    --back-color-alt: #474b4d90;
+
+    --txt-def-color: #000000;
+    --txt-alt-color: #C1C1C1;
+    --txt-aux-color: #FFFFFF;
+
+    --btn-back-color-def: #191919;
+    --border-color: #191919;
+    
     /* Dark Theme */
     --dark-blur: rgba(32, 32, 35, .5);
 
@@ -48,8 +59,8 @@ body {
     overflow-x: none; 
     max-width: 100%; 
     min-height: 100vh; 
-    background: var(--dark-back-def);
-    color: var(--dark-text-color-def);
+    background: var(--back-color-def);
+    color: var(--txt-color-def);
 }
 
 
@@ -84,10 +95,10 @@ section.body {
     border-radius: 12px; 
     cursor: pointer;
 }
-a{ color: var(--dark-text-color-def)}
+a{ color: var(--txt-color-def)}
 .button i {font-size: var(--fz-large);}
 .title {font-size: var(--fz-large); font-weight: bold; text-align: center;}
-.paragraph {color: var(--dark-text-color-alt)}
+.paragraph {color: var(--txt-color-alt)}
 .defaultLink { margin-right: 25px; display: flex;}
 .defaultLink span:nth-child(1) {margin-right: 10px;}
 

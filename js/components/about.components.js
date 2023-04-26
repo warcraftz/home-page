@@ -21,8 +21,8 @@ $(document).ready(function (){
                 <span class="item">Sobre</span>
                 <div class="paragraph">
                     <p>
-                    Mereles Fernando, estudante do <a href="https://www.isptec.co.ao/" class="ex-link"><span>ISPTEC</span></a> (Instituto Superior Politecnico de Tecnologias e ciências) cursando na area de Engenharia Informática. Trabalha como freelance.
-                    Gosta de criar programa que ajudam a resolver problemas do dia dia, construir layouts com photoshop e emplementar com codigo.    
+                    Mereles Fernando, estudante do <a href="https://www.isptec.co.ao/" class="ex-link"><span>ISPTEC</span></a> (Instituto Superior Politécnico de Tecnologias e Ciências) cursando na area de Engenharia Informática. Trabalha como freelancer.
+                    Gosta de criar programas que ajudam a resolver problemas do dia dia, construir layouts com photoshop e emplementar com codigo.    
                     </p>
                     
                     <label for="work" class="port">Portifólio</label>

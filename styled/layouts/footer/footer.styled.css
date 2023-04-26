@@ -29,11 +29,11 @@ footer .inputBox{
 footer .inputBox input {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--dark-button-color-aux);
+    border: 1px solid var(--border-color);
     background: transparent;
     border-radius: 5px;
     outline: none;
-    color: var(--dark-text-color-def);
+    color: var(--txt-def-color);
     font-size: var(--fz-small);
 }
 footer .inputBox label {
@@ -49,11 +49,11 @@ footer .inputBox label {
 footer .inputBox input:valid ~ label,
 footer .inputBox input:focus ~ label 
 {
-    color: #00dfc4;
+    color: var(--txt-def-color);
     padding: 0 10px;
     font-size: var(--fz-small);
     transform: translateX(10px) translateY(-7px);
-    background: var(--dark-back-def);
+    background: var(--back-color-def);
     border-left: 1px solid var(--dark-button-color-aux);
     border-right: 1px solid var(--dark-button-color-aux);
     border-radius: 5px;
@@ -69,6 +69,8 @@ footer form button {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
+    color: var(--txt-aux-color);
+    background: var(--btn-back-color-def);
 }
 footer form button:hover {
     opacity: .9;
