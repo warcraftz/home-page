@@ -6,7 +6,7 @@ $(document).ready(function (){
     var foo = `
     <div class="content">
         <div class="feed" id="feed">
-            <form action="https://formsubmit.co/f7d91712638afe7316d67683ec1c2b31" method="POST">
+            <form action="https://formsubmit.co/20181057@isptec.co.ao" method="POST">
                 <div class="row">
                     <div class="inputBox">
                         <input type="email" name="email" id="email" required>
@@ -19,7 +19,9 @@ $(document).ready(function (){
                     </div>
                 </div>
 
+                <!--
                 <input type="hidden" name="_next" value="https://joyful-begonia-f703e2.netlify.app/page/thanks.html" >
+                -->
                 <div class="btn"><button type="submit">ENVIAR <i class="fa fa-paper-plane"></i></button></div>
             </form>
         </div>

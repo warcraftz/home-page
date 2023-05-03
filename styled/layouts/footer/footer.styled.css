@@ -63,6 +63,7 @@ footer .btn {
     position: relative;
     width: 320px;
     margin: 10px;
+    display: inline-flex;
 }
 footer form button {
     max-width: 320px;
@@ -70,11 +71,44 @@ footer form button {
     padding: 10px;
     border-radius: 5px;
     color: var(--txt-aux-color);
-    background: var(--btn-back-color-def);
-}
-footer form button:hover {
-    opacity: .9;
+    border-radius: 10px;
+    background-color: transparent;
+    letter-spacing: 2.5px;
     cursor: pointer;
+    z-index: 1;
+}
+footer form button::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg, #111111, #17255d, #007ccc);
+    background-size: 200%;
+    background-position: 0 0;
+    border-radius: 10px;
+    transition: .5s ease;
+    z-index: -1;
+}
+footer form button:hover::before{
+    background-position: 100% 0;
+    filter: blur(5px);
+}
+footer form button::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: linear-gradient(45deg, #111111, #17255d, #007ccc);
+    background-size: 200%;
+    background-position: 0 0;
+    border-radius: 10px;
+    transition: .5s ease;
+    z-index: -1;
+}
+footer form button:hover::after {
+    background-position: 100% 0;
 }
 
 footer .right { margin-bottom: 1.5em;}

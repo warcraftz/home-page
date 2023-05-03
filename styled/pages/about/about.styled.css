@@ -16,6 +16,7 @@ section.about .greet {
     text-align: center;
     border-radius: 12px;
     font-weight: normal;
+    color: var(--txt-aux-color);
     background: var(--back-color-alt);
 }
 section.about .less { display: flex; justify-content: space-between; margin-top: 2.5em;}
@@ -23,43 +24,59 @@ section.about .less .lessme h1{font-size: var(--fz-large); letter-spacing: 3.5px
 section.about .less .lessme p{font-size: var(--fz-small);}
 
 section.about .less .pickme {
-    position: relative;
-    display: flex;
-    min-width: 100px;
-    max-width: 100px;
-    min-height: 100px;
-    max-height: 100px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    background: url('../../../assets/imgs/me.jpg') no-repeat;
-    background-size: 100% 100%;
-    border: 1px solid #111;
+    width: 100px;
+    height: 100px;
 }
-section.about .less .pickme::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
+section.about .less .pickme .glow-circle {
+    position: relative;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(5px);
-    border-radius: 12px;
-}
-section.about .pickme .circle {
-    width: 95px;
-    height: 95px;
+    background: var(--back-color-alt);
     border-radius: 50%;
-    background: url('../../../assets/imgs/me.jpg') no-repeat;
-    background-size: 100% 100%;
-    border: 2.5px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.about .less .pickme .glow-circle::after {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 90px;
+    background: var(--back-color-alt);
+    border-radius: 50%;
+}
+section.about .less .pickme .glow-circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffd700, #007ccc);
+    border-radius: 50%;
+}
+section.about .less .pickme .glow-circle span:nth-child(1) {
+    filter: blur(10px);
+}
+section.about .less .pickme .img {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
     z-index: 1;
 }
+section.about .less .pickme .img img {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    max-width: 80px;
+    object-fit: cover;
+    transform: translateX(-50%);
+}
+
 section.about .moreme {
     margin-top: 2.5em;
 }
 section.about .moreme, 
-section.about .ilike, 
+section.about .ilike,
 section.about .onweb {
     margin-bottom: 5em;
 }
@@ -91,4 +108,97 @@ section.about .socials li a{
 }
 section.about .socials li span:nth-child(1){
     font-size: var(--fz-large);
+}
+
+/* [Photos] */
+.photos {
+    display: flex;
+}
+.photos .container 
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 300px;
+}
+.photos .container .box::before,
+.photos .container .box::after {
+    position: absolute;
+    content: '';
+    background: linear-gradient(315deg #00CCFF, #D400D4);
+    inset:  -80px 100px;
+    transition: .5s;
+    filter: hue-rotate(calc(var(--i) * 120deg));
+    animation: photoAnimate 8s linear infinite;
+}
+@keyframes photoAnimate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.photos .box {
+    position: relative;
+    width: 260px;
+    height: 160px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photos .content {
+    position: absolute;
+    inset: 20px;
+    background: #111;
+    border: 5px solid #111;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-size: cover;
+}
+.photos img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photos img:hover {
+    opacity: 0;
+}
+
+.photos .content h2{
+    position: relative;
+    z-index: 2;
+    font-size: var(--fz-normal);
+    text-align: center;
+    color: var(--txt-aux-color);
+    font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+}
+.photos .content h2 span {
+    font-size: var(--fz-small);
+    font-weight: 300;
+}
+.photos .content a {
+    position: relative;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #fff;
+    color: var(--txt-def-color);
+    font-size: var(--fz-small);
+    font-weight: 500;
+}
+.photos .content a:hover {
+    letter-spacing: .2em;
 }

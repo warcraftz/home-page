@@ -10,8 +10,12 @@ $(document).ready(function (){
             </div>
 
             <div class="pickme">
-                <div class="circle">
-                    <span class="blur"></span>
+                <div class="glow-circle">
+                    <span></span>
+                    <span></span>
+                    <div class="img">
+                        <img src="./assets/imgs/me.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -35,7 +39,38 @@ $(document).ready(function (){
             <div class="paragraph">
                 <span>Musica, Desenho, Fotografia</span>
             </div>
+            <li class="photos">
+                <div class="container">
+                    <div class="box" style="--i:0">
+                        <i></i>
+                        <div class="content">
+                            <img src="./assets/imgs/image1.png">
+                            <!--
+                            <h2>Veja mais em <br> <span>CraftzPixels</span></h2>
+                            <a href="#">Visitar Site</a>
+                            -->
+                            <h2>craftzPixels</h2>
+                        </div>
+                    </div>
+    
+                    <div class="box" style="--i:1">
+                        <i></i>
+                        <div class="content">
+                            <img src="./assets/imgs/image2.png">
+                            <!--
+                            <h2>Veja mais em <br> <span>CraftzPixels</span></h2>
+                            <a href="#">Visitar Site</a>
+                            -->
+                            <h2>craftzPixels</h2>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </div>
+        
+
+
+        
 
         <div class="onweb">
             <span class="item">Segui Me</span>

@@ -15,7 +15,7 @@
     /* Colors */
     --blur-color: rgba(255, 255, 255, .1);
     --back-color-def: #FFFFFF;
-    --back-color-alt: #474b4d90;
+    --back-color-alt: #0e1637;
 
     --txt-def-color: #000000;
     --txt-alt-color: #C1C1C1;
@@ -50,9 +50,9 @@
 * {
     margin: 0; 
     padding: 0; 
-    box-sizing: border-box; 
-    text-decoration: none; 
     list-style: none; 
+    text-decoration: none;
+    box-sizing: border-box; 
     font-family: var(--ff-def);
 } 
 body {
@@ -71,9 +71,14 @@ body {
 section.body { 
     min-width: 320; 
     max-width: 600px; 
+    margin-top: 300px;
     padding: 0 20px 0 20px; 
     width: 100%; 
     min-height: 100vh; 
+    background: var(--back-color-def);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 998;
 }
 
 /* variable css [ link / title / paragraph ] */
