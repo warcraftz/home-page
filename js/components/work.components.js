@@ -1,5 +1,11 @@
 $(document).ready(function (){
-    var worksData = [        
+    var worksData = [            
+        {
+            'id': 'https://drive.google.com/drive/folders/1MvhPzugXSqULSn-QsxT4ovJgd7P2Pi_d',
+            'listName': 'P II - Lista de Exercicios 06',
+            'exerNumb': 'Exercicios: 08',
+            'exerSolv': 'Resolvidos: 07'
+        },    
         {
             'id': 'https://drive.google.com/drive/folders/1MvhPzugXSqULSn-QsxT4ovJgd7P2Pi_d',
             'listName': 'P II - Lista de Exercicios 05',
