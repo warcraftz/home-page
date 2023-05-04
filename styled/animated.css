@@ -1,7 +1,5 @@
 .animated {
     position: fixed;
-    min-width: 320px;
-    max-width: 600px;
     top: 100px;
     width: 100%;
     display: flex;
@@ -23,11 +21,8 @@
 }
 .platform .sc-link a {
     position: relative;
-    width: 60px;
-    height: 60px;
     display: inline-flex;
     margin: 20px 20px;
-    font-size: 20px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -65,4 +60,32 @@
 }
 .platform .sc-link a:hover{
     color: #fff;
+}
+
+/* mobile */
+@media screen and (max-width: 692px) {
+    .animated
+    {    
+        min-width: 320px;
+        max-width: 320px;
+    }
+    .platform .sc-link a {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 766px) {
+    .animated
+    {    
+        min-width: 600px;
+        max-width: 600px;
+    }
+    .platform .sc-link a {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
 }

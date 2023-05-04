@@ -1,30 +1,39 @@
 footer {
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2em;
-    padding-top: 5em;
-    border-top: 1px solid var(--dark-button-color-aux);
+    padding: 5em 20px 0 20px;
+    border-top: 1px solid var(--txt-alt-color);
+}
+
+footer .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .feed {
     margin-bottom: 5em;
 }
 footer .feed form {
-    display: flex;
     width: 100%;
+    display: flex;
     flex-direction: column;
 }
 
 footer form .row {
     display: flex;
+    justify-content: center;
 }
 
 footer .inputBox{
     position: relative;
     margin: 10px;
-    width: 150px;
+    width: 140px;
 }
 footer .inputBox input {
     width: 100%;
@@ -61,7 +70,7 @@ footer .inputBox input:focus ~ label
 }
 footer .btn {
     position: relative;
-    width: 320px;
+    width: 300px;
     margin: 10px;
     display: inline-flex;
 }
@@ -111,4 +120,4 @@ footer form button:hover::after {
     background-position: 100% 0;
 }
 
-footer .right { margin-bottom: 1.5em;}
+footer .right { margin-bottom: 2.5em;}

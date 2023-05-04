@@ -52,8 +52,8 @@ header.fixed .hea-content {
         line-height: 40px;
         text-align: center;
         flex-direction: column;
-        border: 1px solid var(--dark-text-color-alt);
-        background: var(--dark-back-def);
+        border: 1px solid var(--txt-def-color);
+        background: var(--back-color-def);
         border-radius: 12px;
     }
     .hea-content .rside .toggleBtn {

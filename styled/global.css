@@ -23,22 +23,6 @@
 
     --btn-back-color-def: #191919;
     --border-color: #191919;
-    
-    /* Dark Theme */
-    --dark-blur: rgba(32, 32, 35, .5);
-
-    --dark-back-def: #202023;
-    --dark-back-alt: #313134;
-
-    --dark-text-color-def: #FFFFFF;
-    --dark-text-color-alt: #C1C1C1;
-
-    --dark-button-color-def: #202023;
-    --dark-button-color-alt: #202023;
-    --dark-button-color-aux: #C1C1C1;
-
-    --dark-button-back-def: #FFD18C;
-    --dark-button-back-alt: #DB8438;
 
     --dark-icon-moon: 'none';
     --dark-icon-sun: 'block';
@@ -66,11 +50,12 @@ body {
 
 
 .lside, .rside { display: flex; line-height: 60px; }
-.app {width: 100%; display: flex; justify-content: center; }
+.app {width: 100%; display: flex; justify-content: center;}
 
 section.body { 
-    min-width: 320; 
+    position: relative;
     max-width: 600px; 
+    min-width: 320px; 
     margin-top: 300px;
     padding: 0 20px 0 20px; 
     width: 100%; 

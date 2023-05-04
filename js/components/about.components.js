@@ -36,11 +36,11 @@ $(document).ready(function (){
 
         <div class="ilike">
             <span class="item">Eu <i class="fa fa-heart"></i></span>
-            <div class="paragraph">
-                <span>Musica, Desenho, Fotografia</span>
-            </div>
-            <li class="photos">
-                <div class="container">
+            <div class="paragraph"><span>Musica, Desenho, Fotografia</span></div>
+
+            <div class="d-imgs">
+                <div class="d-img-container">
+
                     <div class="box" style="--i:0">
                         <i></i>
                         <div class="content">
@@ -52,7 +52,7 @@ $(document).ready(function (){
                             <h2>craftzPixels</h2>
                         </div>
                     </div>
-    
+                
                     <div class="box" style="--i:1">
                         <i></i>
                         <div class="content">
@@ -64,11 +64,23 @@ $(document).ready(function (){
                             <h2>craftzPixels</h2>
                         </div>
                     </div>
+                
+                    <div class="box" style="--i:2">
+                        <i></i>
+                        <div class="content">
+                            <img src="./assets/imgs/image3.png">
+                            <!--
+                            <h2>Veja mais em <br> <span>CraftzPixels</span></h2>
+                            <a href="#">Visitar Site</a>
+                            -->
+                            <h2>craftzPixels</h2>
+                        </div>
+                    </div>
+
                 </div>
-            </li>
+            </div>
         </div>
         
-
 
         
 

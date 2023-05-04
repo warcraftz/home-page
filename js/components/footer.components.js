@@ -26,7 +26,7 @@ $(document).ready(function (){
             </form>
         </div>
         <div class="right">
-            <p class="foo paragraph"> © ${currentYear} - Mereles Fernando. Todos direitos reservados.</p>
+            <p class="foo paragraph"> © ${currentYear} - Mereles Fernando.</p>
         </div>
     </div>
         
