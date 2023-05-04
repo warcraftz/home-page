@@ -32,6 +32,7 @@ section.about .socials li span:nth-child(1){font-size: var(--fz-large);}
     section.about .less .pickme { width: 90px; height: 90px; margin-left: 10px}
     section.about .less .pickme .glow-circle::after { position: absolute; content: ''; width: 80px; height: 80px; background: var(--back-color-alt); border-radius: 50%;}
     section.about .less .pickme .img img {position: absolute; top: 15px; left: 40%; max-width: 80px; object-fit: cover; transform: translateX(-50%);}
+    section.about .ilike .paragraph {margin-bottom: 20px;}
     section.about .d-imgs {
         max-width: 300px;
         min-width: 300px;
