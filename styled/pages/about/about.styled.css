@@ -39,6 +39,7 @@ section.about .socials li span:nth-child(1){font-size: var(--fz-large);}
     section.about .d-img-container {
         position: relative;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
     }
