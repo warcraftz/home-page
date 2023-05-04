@@ -63,8 +63,8 @@ footer .inputBox input:focus ~ label
     font-size: var(--fz-small);
     transform: translateX(10px) translateY(-7px);
     background: var(--back-color-def);
-    border-left: 1px solid var(--dark-button-color-aux);
-    border-right: 1px solid var(--dark-button-color-aux);
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
     border-radius: 5px;
     letter-spacing: 0.2em;
 }
