@@ -33,8 +33,8 @@ section.about .socials li span:nth-child(1){font-size: var(--fz-large);}
     section.about .less .pickme .glow-circle::after { position: absolute; content: ''; width: 80px; height: 80px; background: var(--back-color-alt); border-radius: 50%;}
     section.about .less .pickme .img img {position: absolute; top: 15px; left: 40%; max-width: 80px; object-fit: cover; transform: translateX(-50%);}
     section.about .d-imgs {
-        max-width: 320px;
-        min-width: 320px;
+        max-width: 300px;
+        min-width: 300px;
     }
     section.about .d-img-container {
         position: relative;
@@ -80,7 +80,7 @@ section.about .socials li span:nth-child(1){font-size: var(--fz-large);}
     }
     section.about .box .content{
         position: absolute;
-        width: 300px;
+        width: 290px;
         height: 190px;
         inset: 5px;
         background: #111;
