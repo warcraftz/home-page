@@ -34,8 +34,8 @@ section.about .socials li span:nth-child(1){font-size: var(--fz-large);}
     section.about .less .pickme .img img {position: absolute; top: 15px; left: 40%; max-width: 80px; object-fit: cover; transform: translateX(-50%);}
     section.about .ilike .paragraph {margin-bottom: 20px;}
     section.about .d-imgs {
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 290px;
+        min-width: 290px;
     }
     section.about .d-img-container {
         position: relative;
@@ -81,8 +81,8 @@ section.about .socials li span:nth-child(1){font-size: var(--fz-large);}
     }
     section.about .box .content{
         position: absolute;
-        width: 290px;
-        height: 190px;
+        width: 280px;
+        height: 180px;
         inset: 5px;
         background: #111;
         border: 2px solid #222;
