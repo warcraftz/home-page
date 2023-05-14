@@ -101,7 +101,7 @@ $(document).ready(function (){
                     <span><i class="fab fa-facebook"></i></span>
                     <span>facebook / @warcraftz</span> 
                 </a></li>
-                <li><a href="#" target="_blank"> 
+                <li><a href="https://twitter.com/draftsdot" target="_blank"> 
                     <span><i class="fab fa-twitter"></i></span>
                     <span>twitter / @warcraftz</span> 
                 </a></li>

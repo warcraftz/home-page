@@ -1,10 +1,10 @@
 $(document).ready(function (){
-    var worksData = [            
+    var worksData = [              
         {
-            'id': 'https://drive.google.com/drive/folders/1uwmaCRRjoFmaaK7-yMqeQbQCtEiGksVj',
-            'listName': 'P II - Lista de Exercicios 06',
+            'id': 'https://drive.google.com/drive/folders/1qWdZfu0mjxsqvHXhMPBIeIquiB1fjCOe',
+            'listName': 'P II - Lista de Exercicios 07',
             'exerNumb': 'Exercicios: 08',
-            'exerSolv': 'Resolvidos: 07'
+            'exerSolv': 'Resolvidos: 08'
         },    
         {
             'id': 'https://drive.google.com/drive/folders/1MvhPzugXSqULSn-QsxT4ovJgd7P2Pi_d',
