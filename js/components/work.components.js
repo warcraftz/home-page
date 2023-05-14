@@ -5,6 +5,12 @@ $(document).ready(function (){
             'listName': 'P II - Lista de Exercicios 07',
             'exerNumb': 'Exercicios: 08',
             'exerSolv': 'Resolvidos: 08'
+        },           
+        {
+            'id': 'https://drive.google.com/drive/folders/1uwmaCRRjoFmaaK7-yMqeQbQCtEiGksVj',
+            'listName': 'P II - Lista de Exercicios 06',
+            'exerNumb': 'Exercicios: 08',
+            'exerSolv': 'Resolvidos: 07'
         },    
         {
             'id': 'https://drive.google.com/drive/folders/1MvhPzugXSqULSn-QsxT4ovJgd7P2Pi_d',
