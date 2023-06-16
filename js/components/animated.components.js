@@ -4,8 +4,8 @@ $(document).ready(function (){
     <div class="platform">
         <div class="sc-link">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/draftsdot" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/warcraftz" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </div>
     `
